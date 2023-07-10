@@ -1,0 +1,135 @@
+:root{
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+
+.container{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .navbar-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span{
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scale(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  text-align: center;
+}
+
+.navbar .navbar-extra a{
+  margin: 0 .5rem;
+  color: white;
+}
+.navbar .navbar-extra a:hover{
+  color: var(--primary);
+}
+
+
+
+.navbar .navbar-extra #menu{
+  display: none;
+}
+
+
+.home{
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  background-position: center;
+}
+
+.home .col{
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.home .heading{
+  line-height: 6rem;
+  font-size: 5rem;
+  text-shadow: 1px, 1px, 3px rgba(1, 1, 3, 0.5);
+}
+
+.home .subheading{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.home .heading span{
+  color: var(--primary);
+}
+
+
+
+.home .btn-home a{
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 12px;
+  /* font-size: 1.5rem; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.home .btn-home{
+  margin-top: 2rem;
+}
+
