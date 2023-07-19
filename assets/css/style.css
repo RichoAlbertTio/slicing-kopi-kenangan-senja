@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 body{
@@ -171,6 +171,7 @@ body{
 
 .about .row .about-image img{
   width: 100%;
+  border: 2px solid white;
 }
 
 .about .row .about-text h3{
