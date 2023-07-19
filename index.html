@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kopi Kenangan Senja</title>
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +20,15 @@
     <nav class="navbar">
       <a href="#" class="navbar-logo">Kenangan<span>Senja</span>.</a>
       <div class="navbar-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Kontak</a></li>
-        </ul>
+          <a href="#">Home</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Menu</a>
+          <a href="#">Kontak</a>
       </div>
       <div class="navbar-extra">
         <a href="#" id="search"> <i data-feather="search"></i></a>
         <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
-        <a href="#" id="menu"> <i data-feather="menu"></i></a>
+        <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
       </div>
     </nav>
   </header>
@@ -39,7 +36,7 @@
 
   <main>
     <section class="home" id="home">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col">
             <div class="text-home">
@@ -51,7 +48,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="about" id="about">
@@ -87,8 +84,10 @@
   </footer>
 
   <script>
-    feather.replace()
+    feather.replace();
   </script>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
