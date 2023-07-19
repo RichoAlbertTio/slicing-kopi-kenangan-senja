@@ -7,14 +7,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 2px solid red;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   color: white;
+  /* min-height: 2000px; */
 }
 
+.container {
+  box-sizing: border-box;
+  width: 100%;
+}
 /* navbar */
 .navbar {
   display: flex;
@@ -83,34 +89,52 @@ body{
 #hamburger-menu {
   display: none;
 }
+/* navbar end */
 
 
 /* Home */
-.home{
+.home {
   display: flex;
+  /* jika center vertikal pake align, jika horizontal pake justify-content */
   align-items: center;
   background-image: url(/assets/img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  /* biar posisi nya tetap */
   position: relative;
   background-position: center;
 }
 
+/* gradasi section home */
+.home::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(0deg,rgba(1,1,3,1) 8%, rgba(255, 255,255, 0) 50%);
+}
+
 .home .col{
-  padding: 1.4rem 7%;
+  padding: 1.4rem 11%;
   max-width: 60rem;
 }
 
 .home .heading{
   line-height: 6rem;
   font-size: 5rem;
-  text-shadow: 1px, 1px, 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .home .subheading{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 100;
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  /* jadi ketika warna sama dia contras */
+  mix-blend-mode: difference;
 }
 
 .home .heading span{
@@ -121,7 +145,7 @@ body{
   background-color: var(--primary);
   color: white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-radius: 12px;
   /* font-size: 1.5rem; */
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -130,6 +154,49 @@ body{
   margin-top: 2rem;
 }
 /* home end */
+
+
+/* about */
+.about {
+  padding: 8rem 11% 1.4rem;
+}
+
+.about .row{
+  display: flex;
+}
+
+.about .row .about-image{
+  flex: 1 1 45rem;
+}
+
+.about .row .about-image img{
+  width: 100%;
+}
+
+.about .row .about-text h3{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.about .row .about-text p{
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.about h2{
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.about .row .about-text{
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+.about .heading span {
+  color: var(--primary);
+}
+
+/* Media Queries */
 
 /* Laptop */
 @media (max-width: 1366px) {
