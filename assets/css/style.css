@@ -21,6 +21,7 @@ body{
   width: 100%;
 }
 
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -80,9 +81,7 @@ body{
   color: var(--primary);
 }
 
-
-
-.navbar .navbar-extra #menu{
+#menu{
   display: none;
 }
 
@@ -132,4 +131,56 @@ body{
 .home .btn-home{
   margin-top: 2rem;
 }
+
+
+/* Media Queries */
+
+
+/* Mobile */
+@media (max-width:450px){
+  html{
+    font-size: 55%;
+  }
+  #menu {
+    display: inline-block;
+  }
+
+}
+
+
+/* Tablet */
+@media (max-width:768px){
+  html{
+    font-size: 62.5%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+  }
+  .navbar .navbar-nav .active{
+    right: 0;
+  }
+
+}
+
+
+/* Laptop */
+@media (max-width:1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+
+
+
+
+
 
