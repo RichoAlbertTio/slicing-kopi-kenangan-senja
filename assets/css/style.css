@@ -29,6 +29,9 @@ body {
   right: 0;
   z-index: 999;
 }
+.navbar #hamburger-menu {
+  display: none;
+}
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
@@ -71,9 +74,6 @@ body {
 .navbar .navbar-extra a:hover {
   color: #b6895b;
 }
-.navbar #hamburger-menu {
-  display: none;
-}
 
 /* navbar end */
 /* Home */
@@ -108,6 +108,9 @@ body {
   font-size: 5rem;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
+.home .heading span {
+  color: #b6895b;
+}
 .home .subheading {
   font-size: 1.6rem;
   font-weight: 100;
@@ -116,8 +119,8 @@ body {
   /* jadi ketika warna sama dia contras */
   mix-blend-mode: difference;
 }
-.home .heading span {
-  color: #b6895b;
+.home .btn-home {
+  margin-top: 2rem;
 }
 .home .btn-home a {
   background-color: #b6895b;
@@ -127,16 +130,13 @@ body {
   border-radius: 12px;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
-.home .btn-home {
-  margin-top: 2rem;
-}
 
 /* home end */
 /* about */
 .about {
   padding: 8rem 7% 1.4rem;
 }
-.about h2 {
+.about .heading {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -171,13 +171,10 @@ body {
 
 /* about end */
 /* menu start */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .menu .heading {
+  text-align: center;
   font-size: 2.6rem;
+  margin-bottom: 3rem;
 }
 .menu .heading span {
   color: #b6895b;
