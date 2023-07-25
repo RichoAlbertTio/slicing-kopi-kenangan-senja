@@ -202,11 +202,39 @@ body{
 
 /* menu start */
 .menu {
+  padding: 8rem 7% 1.4rem;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    .menu-card{
+      text-align: center;
+      img {
+        border-radius: 50%;      ;
+        width: 80%;
+      }
+      .menu-card-title {
+        margin-top: 1rem auto .5rem;
+      }
+      
+    }
+
+  }
   .heading {
     @include titleSection();
+    margin-bottom: 1rem !important;
     span{
       color: $primary;
     }
+  }
+  .subheading {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.6;
   }
   
 }
@@ -265,7 +293,7 @@ body{
     }
     .navbar-nav a:hover::after{
       transform: scaleX(0.2);
-    }  
+    }
   }
  
   /* new code test */

@@ -171,13 +171,41 @@ body {
 
 /* about end */
 /* menu start */
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+.menu .row .menu-card {
+  text-align: center;
+}
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+.menu .row .menu-card .menu-card-title {
+  margin-top: 1rem auto 0.5rem;
+}
 .menu .heading {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  margin-bottom: 1rem !important;
 }
 .menu .heading span {
   color: #b6895b;
+}
+.menu .subheading {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
 }
 
 /* menu end */
