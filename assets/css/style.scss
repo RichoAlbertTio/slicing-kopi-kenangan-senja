@@ -6,6 +6,7 @@ $bg : #010101;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 // membuat void judul
@@ -208,8 +209,9 @@ body{
     flex-wrap: wrap;
     margin-top: 5rem;
     justify-content: center;
-    .menu-card{
+    .menu-card{ 
       text-align: center;
+      padding-bottom: 4rem;
       img {
         border-radius: 50%;      ;
         width: 80%;
@@ -217,7 +219,7 @@ body{
       .menu-card-title {
         margin-top: 1rem auto .5rem;
       }
-      
+
     }
 
   }
@@ -239,6 +241,71 @@ body{
   
 }
 /* menu end */
+
+
+.contact {
+  padding: 8rem 7% 1.4rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  .heading {
+    @include titleSection();
+    margin-bottom: 1rem !important;
+    span {
+      color: $primary;
+    }
+  }
+
+  .subheading {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.6;
+  }
+  .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+    .maps {
+      flex: 1 1 45rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    form {
+      flex: 1 1 45rem;
+      padding: 5rem 2rem;
+      text-align:  center;
+      .input-group {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: $bg;
+        border: 1px solid #eee;
+        padding-left: 2rem;
+        
+        input {
+          width: 100%;
+          padding: 2rem;
+          font-size: 1rem;
+          background: none;
+          color: white;
+          outline: none;
+        }
+      }
+      .btn {
+        margin-top: 3rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: $primary;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
 
 
 
@@ -294,6 +361,9 @@ body{
     .navbar-nav a:hover::after{
       transform: scaleX(0.2);
     }
+    :is(.menu, .contact) p {
+      font-size: 1.2rem;
+    }
   }
  
   /* new code test */
@@ -316,6 +386,17 @@ body{
         p {
           font-size: 1.6rem;
         }
+      }
+    }
+  }
+  .contact {
+    .row {
+      flex-wrap: wrap;
+      .maps {
+        height: 30rem;
+      }
+      form {
+        padding-top: 0;
       }
     }
   }

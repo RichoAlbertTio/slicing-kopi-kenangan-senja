@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 body {
@@ -182,6 +183,7 @@ body {
 }
 .menu .row .menu-card {
   text-align: center;
+  padding-bottom: 4rem;
 }
 .menu .row .menu-card img {
   border-radius: 50%;
@@ -209,6 +211,69 @@ body {
 }
 
 /* menu end */
+.contact {
+  padding: 8rem 7% 1.4rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.contact .heading {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  margin-bottom: 1rem !important;
+}
+.contact .heading span {
+  color: #b6895b;
+}
+.contact .subheading {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+.contact .row .maps {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #010101;
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  background: none;
+  color: white;
+  outline: none;
+}
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #b6895b;
+  cursor: pointer;
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -253,6 +318,9 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+  .navbar :is(.menu, .contact) p {
+    font-size: 1.2rem;
+  }
   /* new code test */
   .about .row {
     display: flex;
@@ -272,6 +340,15 @@ body {
   }
   .about .row .about-text p {
     font-size: 1.6rem;
+  }
+  .contact .row {
+    flex-wrap: wrap;
+  }
+  .contact .row .maps {
+    height: 30rem;
+  }
+  .contact .row form {
+    padding-top: 0;
   }
 }
 /* Mobile */
