@@ -8,7 +8,6 @@
 
 
     // kilk diluar sidebar untuk menghilangkan menu
-
     const hamburger = document.querySelector('#hamburger-menu');
 
     document.addEventListener('click', (e) => {
