@@ -33,7 +33,7 @@ body {
   display: none;
 }
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
   text-decoration: none;
@@ -49,7 +49,7 @@ body {
 .navbar .navbar-nav a {
   color: white;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 1rem;
   text-decoration: none;
 }
@@ -105,14 +105,14 @@ body {
 }
 .home .heading {
   line-height: 6rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 .home .heading span {
   color: #b6895b;
 }
 .home .subheading {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 100;
   margin-top: 1rem;
   line-height: 1.6rem;
@@ -240,7 +240,8 @@ body {
 .contact .row .maps {
   flex: 1 1 45rem;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contact .row form {
   flex: 1 1 45rem;
@@ -262,6 +263,7 @@ body {
   background: none;
   color: white;
   outline: none;
+  border: none;
 }
 .contact .row form .btn {
   margin-top: 3rem;
@@ -359,7 +361,8 @@ footer .row .icon-social ul li a:hover, footer .row .nav-link-footer ul li a:hov
   }
   .about .row .about-img img {
     height: 24px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-position: center;
   }
   .about .row .about-text {
@@ -387,6 +390,4 @@ footer .row .icon-social ul li a:hover, footer .row .nav-link-footer ul li a:hov
   html {
     font-size: 55%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
