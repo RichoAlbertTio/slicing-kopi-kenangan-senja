@@ -366,9 +366,7 @@ footer {
    font-size: 62.5%;
   }
   
-  #hamburger-menu {
-    display: inline-block;
-  }
+
   .navbar {
     .navbar-nav{
       position: absolute;
@@ -404,6 +402,9 @@ footer {
     }
     :is(.menu, .contact) p {
       font-size: 1.2rem;
+    }
+    .navbar-extra #hamburger-menu {
+      display: inline-block;
     }
   }
  
