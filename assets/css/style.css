@@ -81,7 +81,7 @@ body {
   display: flex;
   /* jika center vertikal pake align, jika horizontal pake justify-content */
   align-items: center;
-  background-image: url(/assets/img/header-bg.jpg);
+  background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
